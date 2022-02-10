@@ -1,0 +1,411 @@
+/* reset CSS */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* common begin*/
+html{
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.clear {
+    clear: both;
+}
+
+.text-white{
+    color:#fff !important;
+}
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col3{
+    width: calc(100%/3);
+}
+
+.col2{
+    width: 50%;
+}
+
+.col1{
+    width: 100%;
+}
+.text-center {
+    text-align: center !important;
+}
+
+.mt-8{
+    margin-top: 8px !important; 
+}
+
+.mt-16{
+    margin-top: 8overpx !important;
+}
+
+.mt-16{
+    margin-top: 8px !important;
+}
+
+/* common end */
+/* Vi tri, kich thuoc, mau sac, kieu dang */
+/* tu ngoai vao trong, tu tren xuong duoi, tu tong quan den chi tiet */
+#main{
+
+}
+
+#header{
+    height: 46px;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+}
+
+#nav{
+    display: inline-block;
+}
+
+#nav, .subnav{
+    list-style-type: none;
+}
+
+#nav > li{ 
+    display:inline-block;
+}
+
+
+#nav li{ 
+    position: relative;
+}
+
+#nav .subnav{
+    display:none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 160px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#nav .nav-down{
+    font-size: 12px;
+}
+
+#nav .subnav a{
+    color: #000;
+    padding: 0 12px;
+    line-height: 38px;
+}
+
+#nav > li:hover > a, #nav .subnav li:hover a{
+    color: #000;
+    background-color: #ccc;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav>li>a{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#nav li a{
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+}
+#header .mobile-memu-btn {
+    position:absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+#header .mobile-memu-btn,
+#header .search-button{
+    float: right;
+    padding: 0 21px;
+}
+
+#header .search-button:hover{
+    background-color: red;
+    cursor: pointer;
+}
+
+#header .mobile-memu-btn:hover {
+    background-color: #ccc;
+
+}
+
+#header .mobile-memu-btn:hover .ti-menu {
+    background-color: #000;
+
+}
+
+#header .menu-icon,
+#header .search-icon{
+    color:#fff;
+    font-size: 20px;
+    line-height: 46.5px;
+}
+#slider{
+    position: relative;
+    margin-top: 46.5px;
+    padding-top: 50%;
+    background: url(/assets/img/slider/1500x500.jpeg) top center / cover no-repeat;
+}
+
+#slider .text-content{
+    position: absolute;
+    color: #fff;
+    bottom: 47px;
+    width: 100%;
+    text-align: center;
+}
+
+#slider .text-heading{
+
+}
+
+#slider .text-descrip{
+ margin-top: 25px;
+}
+
+
+#contents{
+
+
+}
+
+#contents .contents-section{
+    width: 800px;
+    max-width: 100%;
+    padding: 64px 0 112px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+#contents .section-heading{
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+#contents .section-subheading{
+    font-size: 15px;
+    font-style: italic;
+    text-align: center;
+    margin-top: 25px;
+    opacity: 0.6;
+}
+
+#contents .about-text{
+    font-size: 15px;
+    margin-top: 25px;
+    text-align: justify;
+    line-height: 1.4;
+
+}
+
+#contents .memlist {
+    margin-top: 32px;
+}
+
+#contents .mem-item {
+    text-align: center;
+}
+
+#contents .mem-item .mem-name {
+    font-size: 15px;
+    
+}
+
+#contents .mem-item .mem-avatar {
+    margin-top: 15px;
+    width: 154px;
+    border-radius: 5px;
+}
+
+#contents .tour-section {
+    background-color: black;
+}
+
+.tour-section .contents-section .ticketlist{
+background-color: #fff;
+list-style: none;
+margin-top: 40px;
+}
+
+.ticketlist li{
+    color: #757575;
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.ticketlist .sold-out {
+    background-color: red;
+    color: #fff;
+    padding: 3px 4px;
+    margin-left: 16px;
+}
+
+.ticketlist .quantity {
+    float: right;
+    color: #fff;
+    width: 24px;
+    height: 24px;
+    background-color: #000;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin-top: -3px;
+}
+
+.tour-section .contents-section .place-list{
+    margin-top: 16px;
+}
+
+.place-img{
+ width: 100%;
+ display: block;
+}
+
+.place-img:hover{
+    opacity: 0.6;
+}
+
+.place-body{
+    background-color: #fff;
+    padding: 16px;
+    font-size: 15px;
+    text-align: center;
+
+}
+
+.place-heading{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.place-time{
+    margin-top: 15px;
+    color: #757575;
+}
+
+.place-discrip{
+    margin-top: 15px;
+    line-height: 1.4;
+}
+
+.place-buy{
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 11px 16px;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.place-buy:hover{
+    color: #000;
+    background-color: #ccc;
+}
+
+.contact-form{
+    margin-top: 48px;
+}
+.contact-left{
+font-size: 18px;
+line-height: 1.6;
+}
+
+.contact-left a {
+    color: #101aef;
+    opacity: 0.8;
+}
+
+.contact-left a:hover {
+    opacity: 1;
+}
+
+
+.contact-left i[class*=ti-]{
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-right{
+    
+}
+
+.form-control{
+    padding: 11px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.form-submitbt{
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+    padding: 10px 16px;
+    float: right;
+
+}
+
+.form-submitbt:hover{
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+.foot-img img{
+    width: 100%;
+}
+
+#footer{
+    display: inline-block;
+ padding: 64px 0px;
+ text-align: center;
+}
+
+.social-list{
+    font-size: 24px;
+}
+
+.social-list a {
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+}
+
+.social-list a:hover{
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.copyright{
+    padding: 15px 0;
+}
+
+.copyright a {
+    color: rgba(0, 0, 0, 0.5);
+}

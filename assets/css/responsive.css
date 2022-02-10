@@ -1,0 +1,105 @@
+/* PC */
+@media (max-width: 1024px) {
+
+}
+
+/* table and mobile */
+@media (max-width: 1023px) {
+.place-buy {
+    padding: 16px 16px;
+}
+
+.form-submitbt {
+    padding: 16px 16px;
+}
+
+.form-control {
+    padding: 15px;
+}
+
+.social-list {
+    font-size: 48px;
+}
+.footer .social-list {
+    margin: 0 8px;
+}
+
+.footer .copyright a {
+    padding: 12px o;
+    display: inline-block;
+}
+
+.contact-left {
+    line-height: 2;
+}
+}
+
+/* table */
+@media (min-width: 740px) and (max-width: 1023px) {
+
+}
+
+/* mobile */
+@media (max-width: 740px) {
+    
+    #nav {
+        display: block;
+    }
+    #nav > li {
+        display: block;
+    }
+
+    #nav .subnav {
+        position: initial;
+        background-color: #333;
+    }
+
+    #nav .subnav a {
+    color: #fff;
+    padding: 5 40px;
+
+    }
+    .nav li a {
+        padding: 2px 24px;
+    }
+
+    #nav > li:first-child{
+        display: inline-block;
+    }
+    #header {
+        overflow: hidden;
+    }
+
+    .s-full-width,
+    .s-col-full {
+        width: 100%;
+    }
+
+    #header .search-button {
+        display: none;
+    }
+    #header .mobile-memu-btn {
+        display: block;
+    }
+
+
+    #contents .mem-item .mem-avatar {
+        width: 60%;
+    }
+    .s-mt8 {
+        margin-top: 8px;
+    }
+
+    #slider .s-text-content{
+        bottom: 16px;
+    }
+    
+    
+    #slider .s-text-descrip{
+     margin-top: 16px;
+    }
+
+    .contact-right {
+        margin-top: 32px;
+    }
+}
