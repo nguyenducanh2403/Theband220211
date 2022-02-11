@@ -164,27 +164,39 @@ html{
     font-size: 20px;
     line-height: 46.5px;
 }
-#slider{
-    position: relative;
-    margin-top: 46.5px;
-    padding-top: 50%;
-    background: url(/assets/img/slider/1500x500.jpeg) top center / cover no-repeat;
+.slider{
+    margin-top: 46px;
+    background-color: #000;
+    /* background: url(/assets/img/map/footimg.jpeg) top center / cover no-repeat; */
 }
 
-#slider .text-content{
-    position: absolute;
+.h__img {
+    width: 100%;
+    top: 0;
+
+}
+
+.h__img img {
+    width: 100%;
+}
+
+
+.slider .text-content{
     color: #fff;
-    bottom: 47px;
+    padding-bottom: 8px;
     width: 100%;
     text-align: center;
+    background-color: #000;
 }
 
-#slider .text-heading{
+.slider .text-heading{
+    margin-top: 8px;
 
 }
 
-#slider .text-descrip{
+.slider .text-descrip{
  margin-top: 25px;
+ margin-bottom: 8px;
 }
 
 
